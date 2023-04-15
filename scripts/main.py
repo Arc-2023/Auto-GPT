@@ -17,7 +17,9 @@ import argparse
 from logger import logger
 import logging
 from prompt import get_prompt
-
+import os
+os.environ["http_proxy"] = "http://127.0.0.1:10809"
+os.environ["HTTP_PROXY"] = "http://127.0.0.1:10809"
 cfg = Config()
 
 
